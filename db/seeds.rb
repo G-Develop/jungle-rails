@@ -132,5 +132,80 @@ cat3.products.create!({
   price: 2_483.75
 })
 
+product1 = Product.find_by id: 1
+product2 = Product.find_by id: 2
+product3 = Product.find_by id: 3
+product4 = Product.find_by id: 4
+product5 = Product.find_by id: 5
+
+user1 = User.create!({
+  first_name:'a',
+  last_name: 'a',
+  email:'a@a',
+  password:'a',
+  password_confirmation:'a'
+})
+
+user2 = User.create!({
+  first_name:'b',
+  last_name: 'b',
+  email:'b@b',
+  password:'b',
+  password_confirmation:'b'
+})
+
+user3 = User.create!({
+  first_name:'c',
+  last_name: 'c',
+  email:'c@c',
+  password:'c',
+  password_confirmation:'c'
+})
+
+user4 = User.create!({
+  first_name:'d',
+  last_name: 'd',
+  email:'d@d',
+  password:'d',
+  password_confirmation:'d'
+})
+
+user5 = User.create!({
+  first_name:'e',
+  last_name: 'e',
+  email:'e@e',
+  password:'e',
+  password_confirmation:'e'
+})
+
+product1.reviews.create!({
+  user_id: user1.id,
+  description: 'a',
+  rating:'1'
+})
+
+product1.reviews.create!({
+  user_id: user2.id,
+  description: 'b',
+  rating:'2'
+})
+
+product1.reviews.create!({
+  user_id: user3.id,
+  description: 'c',
+  rating:'3'
+})
+
+product1.reviews.create!({
+  user_id: user4.id,
+  description: 'd',
+  rating:'4'
+})
+
+product1.reviews.create!({
+  user_id: user5.id,
+  description: 'e',
+  rating:'5'
+})
 
 puts "DONE!"
