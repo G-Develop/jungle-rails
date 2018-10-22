@@ -2,6 +2,11 @@
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 
+## Final Product
+!["landing page"](url goes here)
+!["product"](url goes here)
+!["order page"](url goes here)
+
 
 ## Setup
 
